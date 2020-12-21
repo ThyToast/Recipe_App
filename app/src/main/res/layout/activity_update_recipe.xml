@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addRecipe_fragment">
+
+    <EditText
+        android:id="@+id/update_recipeName_EditText2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Recipe Instructions"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_recipeType_spinner" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/update_uploadImage_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_cloud_upload_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <EditText
+        android:id="@+id/update_recipeName_EditText"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Recipe Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_uploadImage_button" />
+
+    <Spinner
+        android:id="@+id/update_recipeType_spinner"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_recipeName_EditText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/update_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:text="Update"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintEnd_toEndOf="@+id/update_recipeName_EditText2"
+        app:layout_constraintTop_toBottomOf="@+id/update_recipeName_EditText2"
+        android:contentDescription="Submit Recipe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

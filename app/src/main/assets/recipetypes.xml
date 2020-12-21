@@ -1,0 +1,15 @@
+<?xml version = "1.0"?>
+<!--<string-array name="recipe_type">-->
+<!--	<item>Breakfast</item>-->
+<!--	<item>Lunch</item>-->
+<!--	<item>Dinner</item>-->
+<!--	<item>Dessert</item>-->
+<!--</string-array>-->
+
+<records>
+	<recipe id="1" type="Breakfast"/>
+	<recipe id="2" type="Lunch"/>
+	<recipe id="3" type="Dinner"/>
+	<recipe id="4" type="Dessert"/>
+	<recipe id="5" type="Snacks"/>
+</records>
